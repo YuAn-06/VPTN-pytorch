@@ -3,7 +3,6 @@ Copyright (C) 2023
 @ Name: main_VPTN.py
 @ Time: 2023/11/2 16:27
 @ Author: YuAn_L
-@ Eamil: yuan_l1106@163.com
 @ Software: PyCharm
 """
 
