@@ -40,22 +40,17 @@ class Data_Process():
 
 
     def process_data(self):
-
         
         if self.name == 'deb':
-            if self.task == 'imputation':
-                data = np.loadtxt(fname=self.data_path)
-            else:
-                data = pd.read_table('C:\Study\Code\自由探索\Debutanizer_Data.txt', sep='\s+')
-                data = data.values
-          
+  
+            data = pd.read_table(self.data_path, sep='\s+')
+            data = data.values
+        
             x = data[:, :7]
             y = data[:, 7]
             x_temp = x
             y_temp = y
-
-
-
+            
             x_train = x_temp[:1915, :]
             x_test = x_temp[1915:, :]
 
