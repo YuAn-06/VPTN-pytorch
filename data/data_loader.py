@@ -59,7 +59,8 @@ class Data_Process():
 
         elif self.name == 'sru':
 
-
+            data = pd.read_table(self.data_path, sep='\s+')
+            data = data.values
             data = np.array(data)
             TRAIN_SIZE = 8000
             x = self.data[:, 0:len(self.data[0]) -1]
