@@ -8,7 +8,7 @@ The papaer Link: https://ieeexplore.ieee.org/abstract/document/9508830
 
 # How to Run
 
-Open `run_VPTN.py`, add the path of the debutanizer Column dataset and run:
+Open `run_VPTN.py`, add the path of the debutanizer column dataset and run:
 ```
 args.ata_path = 'xxxx'
 ```
