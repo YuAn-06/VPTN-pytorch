@@ -10,7 +10,7 @@ The papaer Link: https://ieeexplore.ieee.org/abstract/document/9508830
 
 Open `run_VPTN.py`, add the path of the debutanizer column dataset and run:
 ```
-args.ata_path = 'xxxx'
+args.data_path = 'xxxx'
 ```
 
 # Experiement:
