@@ -78,7 +78,7 @@ class VAEmodel(nn.Module):
         feature = self.encoder(x)
 
         mean = self.mean_layer(feature)
-        var = self.logvar_layer(feature)
+        var = nn.ReLu()(self.logvar_layer(feature))
         z = self.reparamterization(mean, var)
 
         x_hat = self.decoder(z)
